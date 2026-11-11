@@ -8,17 +8,17 @@
 </head>
 <body>
     <section class="confirm">
-      <h1>入力内容の確認</h1>
+      <h1>入力内容確認</h1>
         <?php
             if($_SERVER["REQUEST_METHOD"]=== 'POST'){
                 /*入力内容の取得*/
-                $name = $_POST["name"];
-                $age = $_POST["age"];
-                $phone = $_POST["phone"];
+                $name = $_POST["name"] ?? "";
+                $age = $_POST["age"] ?? "";
+                $phone = $_POST["phone"] ?? "";
                 $email = $_POST["email"];
-                $address = $_POST["address"];
-                $question = $_POST["question"];
-                $sex = $_POST["sex"];
+                $address = $_POST["address"] ?? "";
+                $question = $_POST["question"] ?? "";
+                $sex = $_POST["sex"] ?? "";
                 $error = 0;
 
                 if(!preg_match("/\A[\p{Hiragana}\p{Katakana}\p{Han}a-zA-Z々ー]+\z/u",$name)){
