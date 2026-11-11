@@ -10,12 +10,16 @@ body {
     font-weight: bold;
 }
 
+<<<<<<< HEAD
 h1 {
     color: #0066ff;
 }
 
 form{
     background-color: #fff;
+=======
+form{
+>>>>>>> origin/main
     margin:auto;
     text-align: left;
     width: 80%;
@@ -36,7 +40,11 @@ button{
     display: block;
     background-color: rgb(0, 106, 255);
     padding: 10px 15px;
+<<<<<<< HEAD
     margin: 0 0 10px 5%;
+=======
+    margin-left: 5%;
+>>>>>>> origin/main
     color:#fff;
 }
 

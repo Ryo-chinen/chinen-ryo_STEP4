@@ -12,6 +12,7 @@
         <?php
             if($_SERVER["REQUEST_METHOD"]=== 'POST'){
                 /*入力内容の取得*/
+<<<<<<< HEAD
                 $name = $_POST["name"] ?? "";
                 $age = $_POST["age"] ?? "";
                 $phone = $_POST["phone"] ?? "";
@@ -19,6 +20,15 @@
                 $address = $_POST["address"] ?? "";
                 $question = $_POST["question"] ?? "";
                 $sex = $_POST["sex"] ?? "";
+=======
+                $name = $_POST["name"];
+                $age = $_POST["age"];
+                $phone = $_POST["phone"];
+                $email = $_POST["email"];
+                $address = $_POST["address"];
+                $question = $_POST["question"];
+                $sex = $_POST["sex"];
+>>>>>>> origin/main
                 $error = 0;
 
                 if(!preg_match("/\A[\p{Hiragana}\p{Katakana}\p{Han}a-zA-Z々ー]+\z/u",$name)){
